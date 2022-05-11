@@ -1,0 +1,24 @@
+@import '../../styles/index.scss';
+
+.App {
+    background: #a19d9d;
+    padding: 16px;
+    @include borders(white, #999);
+
+    .Header {
+        background: #bab8b8;
+        padding: 10px 12px;
+        @include borders(#999, white);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .Body {
+        margin-top: 16px;
+        @include borders(#999, white);
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+    }
+}

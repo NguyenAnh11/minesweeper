@@ -1,0 +1,15 @@
+@import '../../styles/index.scss';
+
+.Face {
+    width: 52px;
+    height: 52px;
+    background: #d6d6d6;
+    padding: 5px;
+    font-size: 35px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include borders(white, #999);
+    @include buttons
+}

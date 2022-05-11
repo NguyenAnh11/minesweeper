@@ -1,0 +1,22 @@
+@import '../../styles/index.scss';
+
+.Button {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    @include borders(white, #7b7b7b);
+    @include buttons;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.open {
+        border-color: #7b7b7b;
+        border-width: 1px;
+    }
+
+    span {
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
